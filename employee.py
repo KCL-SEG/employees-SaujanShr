@@ -49,7 +49,7 @@ class Hourly_Contract(Contract):
         return f' works on a contract of {self.number_of_hours} hours at {self.contract_pay}/hour'
 
 
-class Commission:
+class Commission(ABC):
     @abstractmethod
     def get_pay(self):
         pass
